@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEBOT 👾</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/LOG__OF.png">
+</head>
+<body>
+    <!--Sign-In-->
+    <div class="Boti">
+        <img src="img/boti.gif" alt="" width="300px" height="300px">
+    </div>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Bienvenido a MATEBOT, un lugar para aprender y divertirte
+                Si ya tienes una cuenta inicia seccion aqui.</p>
+                <input type="button" value="Inicia Sesion" id="sign-in">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="for-information-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <p>o usa tu email para registrarte</p>
+                <form class="form">
+                    <label>
+                        <i class='bx bx-user'></i>
+                        <input type="text" placeholder="Nombres Completos">
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div> 
+
+
+
+<!--Sign-Up-->
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Hola de Nuevo!!</h2>
+                <p>Inicia secion para adentrate en una nueva aventura 
+                , si no tienes cuenta aun, Registrate aqui.</p>
+                <input type="button" value="Registarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="for-information-childs">
+                <h2>Iniciar Sesion</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <p>o inicia sesion con una cuenta</p>
+                <form class="form">
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar Sesion">
+                </form>
+            </div>
+        </div>
+    </div> 
+    <script src="login.js"></script>
+
+    <!--FIREBASE SCRIPTS-->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBvKR5MzhxS8OhU9Cog2ZsH91Cko-pp_-M",
+            authDomain: "tdah-513fc.firebaseapp.com",
+            projectId: "tdah-513fc",
+            storageBucket: "tdah-513fc.appspot.com",
+            messagingSenderId: "614531647661",
+            appId: "1:614531647661:web:dfc83ebe98c4be8f9d5e24"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth =firebase.auth();
+        </script>
+</body>
+</html>
